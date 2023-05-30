@@ -1,0 +1,273 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	min-width: 100vh;
+	margin: 0 auto;
+	background-color: #676763ad;
+	color: #333333;
+	background: #5e5b5bad url(./img/the-vampire-diaries.jpg) no-repeat top fixed ;
+	background-size: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+	padding: 35px;
+
+	/* border: solid 1px #00FFAA; */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	
+}
+
+
+main .listagem-tvd {
+	display:  flex;
+	width: 90vw;
+	height: 80vh;
+	flex-wrap: wrap;
+	gap: 50px;
+	justify-content:center;
+	align-items: center;
+
+}
+
+.titulo{
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.titulo img{
+	width: 30%;
+	height: 10%;
+	margin-top: -50px;
+	margin-bottom: -30px;
+}
+   
+  .card-personagens {
+	display: flex;
+	margin-top: 1%;
+	width: 95vw;
+	height: 100%;
+	margin-left: 50px;
+  
+  }
+ 
+  main .cartao-tvd .informacoes {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	
+}
+
+
+main .informacoes span {
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+}
+
+
+
+main .cartao-tvd .tipos {
+	display: flex;
+	gap: 15px;
+}
+
+main .tipos {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	margin-bottom: 10px;
+	padding: 8px;
+	border-radius: 10px;
+	
+
+}
+
+.vampiro {
+	background-color: #8ccdec6e;
+	text-align: center;
+	border-radius: 12px;
+	width: 300px;
+}
+.doppelganger {
+	width: 300px;
+	background-color: #b9c09aad;
+	text-align: center;
+	border-radius: 12px;
+}
+
+.vampiro e humana{
+	background-color: #c0d39bfb;
+	text-align: center;
+	border-radius: 12px;
+	width: 300px;
+}
+
+main .descricao {
+    max-height: 80px;
+    font-size: 18px;
+    padding-right: 10px;
+}
+  .card {
+	display: flex;
+	perspective: 1000px;
+	width: 90%;
+	height: 95%;
+  }
+  
+  .front, .front1, .front2,
+  .back {
+	height: 450px;
+	width: 85%;
+	background-color:  rgba(168,171,174, 0.7);
+	border-radius: 20px;
+	display: flex;
+	padding: 2%;
+	position: absolute;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition: all 1s ease;
+	
+  }
+  
+  .front, .front1, .front2  {
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	transform: rotateY(0deg);
+	opacity: 90%;
+  }
+
+  .front{
+	background-image: url(../imagens/stefan.jpg);
+  }
+  
+  .front1{
+	background-image: url(../imagens/duplicatas.jpg);
+	background-position: top;
+
+  }
+
+  .front2{
+	background-image: url(../imagens/damon.jpg);
+  }
+
+ 
+
+  .back {
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+  
+  .card:hover .front{
+	transform: rotateY(-180deg);
+  }
+  
+  .card:hover .front1{
+	transform: rotateY(-180deg);
+  }
+
+  .card:hover .front2{
+	transform: rotateY(-180deg);
+  }
+
+  .card:hover .back {
+	transform: rotateY(0deg);
+  }
+  
+  .back p{
+	font-size: 18px;
+	
+  }
+  
+  .front img {
+	width: 40%;
+	border-radius: 20px;
+	opacity: 90%;
+  
+  }
+  
+  .back img {
+	width: 80%;
+	height: 130px;
+	opacity: 0.8;
+	border-radius: 20px;
+  }
+  
+  .back .estilo {
+	width: 40px;
+	height: 40px;
+  }
+  
+  .back .img-estilo{
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .back .hp {
+	width: 95%;
+	border: 1px solid #191919;
+	border-radius: 8px;
+	color: #333333;
+	font-family: 'Itim', cursive;
+	margin-top: 2%;
+	font-size: 9px;
+	padding: 2px;
+	background-color: #d3d3d3;
+  }
+  
+  .back .power, .power1 {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	width: 90%;
+	font-family: 'Itim', cursive;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #333333;
+	border: 2px solid #191919;
+	border-radius: 15px;
+	padding: 0 5px;
+	background-color: #b0c4de;
+  
+  }
+  
+  .back .desc{
+	margin-top: 10px;
+	width: 90%;
+	font-size: 15px;
+	font-family: 'Itim', cursive;
+	font-weight: 700;
+	color: #333333;
+  }
+  
+  .clase11{
+	width: 2px;
+  }
+  
+  .front h5 {
+  
+	color: #FFFFFF;
+	font-size: 22px;
+	text-transform: uppercase;
+  }
+  
+  
+  
+
+
